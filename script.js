@@ -15,8 +15,8 @@ $(document).ready(function(){
         }  
         console.log("NOW");
 
-    $("#submit").on("click",function (event){
-        if ()
-    })
+    // $("#submit").on("click",function (event){
+    //     if ()
+    // })
     
 }) //document ready end. End of script
