@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* moved the "font-size" condition into the body tag to simplify and condense the number of elements in the css. Also, font-size has increased from 16px tp 18px for reading accessibility. */
+body {
+    background-color: #d9dcd6;
+    font-size: 18px;
+}
+/* Top Nav header for the page */
+header {
+    background-color: #2a607c;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 48px;
+    color: #ffffff;
+    clear: none;
+    width: 100%;
+    }
+
+   /*changed the "seo" span color to a visually accessible color that compliments the existing color scheme. */
+.seo {
+    color: #e7a52b;
+}
+
+/* Top nav formatting*/
+nav {
+    height: 60px;
+    margin: 0 20px;
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+/* Top nav links and their list orientation*/
+/* added psuedo-classes to the nav li to improve accessibility. */
+nav ul li {
+    list-style-type: none;
+    display: inline-flex;
+    margin-left: 25px;
+    
+}
+.button {
+    width: 10%; 
+    height: 45%;
+    font-size: 20px;
+    color:cornflowerblue;
+
+ }
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkgoldenrod;
+    }
+
+a:focus {
+    color: darkgoldenrod;
+}
+
+/* re-tagged all "p" tags within the "main" tag to "article". Tag removed. Additionally, to improve reading accessibility, the font size has been increased from "16px". "font-size" is now located in the "body" section */
+
+/* Tried adding an alt to the image here...I don't know if it works like that.*/
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("./images/digital-marketing-meeting.jpg");
+    alt: a diverse group of people discuss ideas during a meeting;
+    background-size: cover;
+    background-position: center;
+}
+/* for the invertdex */
+.new_hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("./images/proper/digital-marketing-meeting.jpg.png");
+    alt: a diverse group of people discuss ideas during a meeting;
+    background-size: cover;
+    background-position: center;
+}
+/*Renamed the ".content" div tag to "main".*/
+main {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+/*.float-left & .float-right are the images in each of the "main" "sections"*/
+/*condensed img height from the previous img classes and merged into these "float" img classes*/
+.float-left {
+    float: left;
+    margin-right: 25px;
+    max-height: 200px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+    max-height: 200px;
+}
+
+/* took all pre-existing div-classes in the "main" (previously "content") tag and gave their css a single tag to operate through to maintain consistency. */
+
+section {
+margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+
+
+
+/* condensed all "H2" tags in the main tag. Given that this is a single page site and few H2 tags, this seemed like a sensible approach. Not sure if it would hold up if the site expanded. */
+h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* renamed "benefits" div to "aside"  */
+aside {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+/* condensed all associated h3 tags in the "aside" tag into one, general h3 tag*/
+h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+/* combined & condensed all repetative styling in all "aside" related tags and  */
+.aside {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.aside img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+footer {
+    padding: 30px;
+    clear: both;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.log_in {
+    display: flex;
+    margin: 15% auto;
+    width: 50%;
+    height: 500px;
+    background-color: #2a607c;
+}
+
+#inputs{
+    display: flex;
+    align-items: center;
+    margin: 25% auto;
+    padding: 10%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: aliceblue;
+}
+
+#submit{
+    margin: 0 0 0 30%;
+    width: 45%; 
+    height: 45%;
+    font-size: 20px;
+    color:black;
+    font-weight: bold;
+}
+
+#submit_text{
+    font-size: 20px;
+    color:black;
+    font-weight: bold;
+}
