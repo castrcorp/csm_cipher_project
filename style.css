@@ -92,9 +92,11 @@ a:focus {
     background-position: center;
 }
 .jumbotron {
-    background-image:url("./images/proper/ciphzan.jpg");
+    background-image:url("https://pbs.twimg.com/profile_banners/342926562/1609481012/1500x500");
+    height: 90vh;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     color: white
 }
 /*Renamed the ".content" div tag to "main".*/
