@@ -54,11 +54,19 @@ a {
 }
 
 a:hover {
-    color: darkgoldenrod;
+    color: rgb(245, 201, 90);
     }
 
 a:focus {
-    color: darkgoldenrod;
+    color: rgb(245, 201, 90);
+}
+
+#emp-number{
+    color: #ffffff;
+}
+
+#plan-link{
+    float: right;
 }
 
 /* re-tagged all "p" tags within the "main" tag to "article". Tag removed. Additionally, to improve reading accessibility, the font size has been increased from "16px". "font-size" is now located in the "body" section */
@@ -82,6 +90,12 @@ a:focus {
     alt: a diverse group of people discuss ideas during a meeting;
     background-size: cover;
     background-position: center;
+}
+.jumbotron {
+    background-image:url("./images/proper/ciphzan.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white
 }
 /*Renamed the ".content" div tag to "main".*/
 main {
@@ -160,6 +174,10 @@ footer {
     text-align: center;
 }
 
+.mith-foot{
+    margin-top: 100px auto;
+}
+
 .log_in {
     display: flex;
     margin: 15% auto;
@@ -191,3 +209,50 @@ footer {
     color:black;
     font-weight: bold;
 }
+
+.time{
+    color: coral;
+    font-size: 35px;
+}
+
+.saveBtn {
+    border-left: 1px solid black;
+    border-top-right-radius: 4px;
+   
+    background-color: #06AED5;
+    color: white;
+  }
+
+.saveBtn i:hover {
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+  }
+  .past {
+    background-color: #d3d3d3;
+    color: black;
+  }
+  
+  .present {
+    background-color: #ff6961;
+    color: black;
+  }
+  
+  .future {
+    background-color: #77dd77;
+    color: black;
+  }
+
+  .time-block{
+      text-align: center;
+      border-radius: 15px;   
+  }
+  .container{
+    width: 55vw auto;
+  }
+  
+  /* .hour {
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    color: #000000;
+  } */
