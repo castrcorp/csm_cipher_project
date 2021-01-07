@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+    let lucky = ""
+    const containerEl = $("#timeline");
+
     var screenEl = $("#screen");
     
     console.log("But why are you here?");
@@ -48,19 +51,47 @@ $(document).ready(function(){
                     $(this).addClass("past");
                 }
                 
-                if (dayHour <= 22) {
-                   $("#17").text("This is a MONDO hint.")
-                 }
+                // //if (dayHour < 22) {
+                //    $("#17").text("This is a MONDO hint.")
+                //  }
     
                 
             })
         }
         timeCheck()
     // This is the "save" to local data function. Which works! I just...can't seem to get the data correctly after it's saved.
-        $("button").click(function (event) {
+        $(".saveBtn").on("click",function (event) {
     
             
             var activity = $(this).siblings(".textarea").val();
+            console.log(activity);
+            if ($("#10am").val() === "you got it buddy" && $(".present")) {
+                 alert("oh I see... well then");
+                 lucky = prompt("So what's the password");
+                 console.log(lucky);
+                 if (lucky !== "ducksMan") {
+                     while (lucky !== "ducksMan") {
+                        lucky = prompt("nice try, but seriously \nI need the right answer"); 
+                     }
+                 }else {
+                     alert("Yea, you got that right...Ducks, man.");
+                     const surprise = $("<div>").addClass("row");
+                     const newHour = $("<div>").addClass("col-2 hour d-flex justify-content-end");
+                     const newHourTime = newHour.text("11PM");
+                     const newText = $("<textarea>").addClass("col-8 textarea description plan text-warning bg-dark");
+                     const newTextEntry = newText.val("This could really use some contexxxt");
+                    const newBtn = $("<button>").addClass("col-1 saveBtn").attr("src", "./images/proper/save-24.png");
+                    const newIcon= $("<img>").attr("src", "./images/proper/save-24.png");
+                    newBtn.append(newIcon);
+                    containerEl.append(surprise.append(newHour, newHourTime, newText, newTextEntry, newBtn));
+                     
+                    const newImg= $("<img>").attr("src", "https://pbs.twimg.com/profile_banners/342926562/1609481012/1500x500");
+
+                    containerEl.append(surprise.append(newImg));
+                 }
+            } else {
+                $(this).siblings(".textarea").empty();
+        }
             var theHour = $(this).attr("data-todo");
             
     

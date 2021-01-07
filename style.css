@@ -252,9 +252,9 @@ footer {
     width: 55vw auto;
   }
   
-  /* .hour {
+  .hour {
     display:flex;
     justify-content: center;
     align-content: center;
     color: #000000;
-  } */
+  } 
