@@ -17,18 +17,15 @@
     <header>
         <h1>Hori<span class="seo">seo</span>n
         </h1>
-        <!-- top nav -->
-        <nav>
+         <nav>
             <ul>
                 <li>
-                    <a id="emp-number">Welcome Employee #637b-89!</a>
+                    <a id="emp-number">Welcome Employee</a>
                 </li>
             </ul>
-            <!-- <a id="plan-link" href="planner.html">Don't Forget to Plan Your Day</a> -->
-
         </nav>
     </header>
-   <!-- the beginning of the page. the "current day" id is where the time will be displayed (implemented in the JS code). -->
+   
    <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">Don't waste our time. Schedule your day.</p>
@@ -37,9 +34,9 @@
    </header>
    <div class="container" id="timeline">
 
-      <!-- our time slots begin here. The user sees that they are listed from 9am to 5pm. But they also have a "data" tag that lists their time in military/european time. This was done to simplify the numerical ordering process in the schedule -->
       <div class="row">
          <div class="col-2 hour d-flex justify-content-end"> 9 AM</div>
+         <!-- 1 Who are you again? -->
          <textarea id="9am" class="col-8 textarea description plan" data-time="9"></textarea>
          <button class="col-1 saveBtn " data-todo="9oclock"><img src="./images/proper/save-24.png"></button>
       </div>
@@ -53,27 +50,30 @@
 
       <div class="row">
          <div class="col-2 hour d-flex justify-content-end"> 11 AM</div>
-         <textarea class="col-8  textarea description plan" data-time="11" data-todo="11oclock"></textarea>
+         <!-- 4 we dont't care about your real name -->
+         <textarea id="11am" class="col-8  textarea description plan" data-time="11" data-todo="11oclock"></textarea>
          <button class="col-1 saveBtn " data-todo="11oclock"><img src="./images/proper/save-24.png"></button>
       </div>
 
 
       <div class="row">
          <div class="col-2 hour d-flex justify-content-end"> 12 PM</div>
-         <textarea class="col-8  textarea description plan" data-time="12" data-todo="12oclock"></textarea>
+         <!-- 3 "You're better off avoiding it altogether" -->
+         <textarea id="12pm" class="col-8  textarea description plan" data-time="12" data-todo="12oclock"></textarea>
          <button class="col-1 saveBtn " data-todo="12oclock"><img src="./images/proper/save-24.png"></button>
       </div>
 
 
       <div class="row">
          <div class="col-2 hour d-flex justify-content-end"> 1 PM</div>
-         <textarea class="col-8  textarea description plan" data-time="13" data-todo="1oclock"></textarea>
+         <textarea id="1pm" class="col-8  textarea description plan" data-time="13" data-todo="1oclock"></textarea>
          <button class="col-1 saveBtn " data-todo="1oclock"><img src="./images/proper/save-24.png"></button>
       </div>
 
 
       <div class="row">
          <div class="col-2 hour d-flex justify-content-end"> 2 PM</div>
+         <!-- 2 Don't forget who you're assisting -->
          <textarea id="2pm" class="col-8  textarea description plan" data-time="14" data-todo="2oclock"></textarea>
          <button class="col-1 saveBtn" data-todo="2oclock"> <img src="./images/proper/save-24.png"> </button>
       </div>
@@ -81,21 +81,22 @@
 
       <div class="row">
          <div class="col-2 hour d-flex justify-content-end"> 3 PM</div>
-         <textarea class="col-8  textarea description plan" data-time="15" data-todo="3oclock"></textarea>
+         <textarea id="3pm" class="col-8  textarea description plan" data-time="15" data-todo="3oclock"></textarea>
          <button class="col-1 saveBtn " data-todo="3oclock"><img src="./images/proper/save-24.png"></button>
       </div>
 
 
       <div class="row">
          <div class="col-2 hour d-flex justify-content-end"> 4 PM</div>
-         <textarea id="test" class="col-8  textarea description plan" data-time="16" data-todo="4oclock"></textarea>
+         <textarea id="4pm" class="col-8  textarea description plan" data-time="16" data-todo="4oclock"></textarea>
          <button class="col-1 saveBtn " data-todo="4oclock"><img src="./images/proper/save-24.png"></button>
       </div>
 
 
       <div class="row">
          <div  class="col-2 hour d-flex justify-content-end"> 5 PM</div>
-         <textarea class="col-8  textarea description plan" id="17" data-time="17" data-todo="5oclock"></textarea>
+         <!-- 5 and remember... -->
+         <textarea id="5pm" class="col-8  textarea description plan" id="17" data-time="17" data-todo="5oclock"></textarea>
          <button class="col-1 saveBtn " data-todo="5oclock"><img src="./images/proper/save-24.png"></button>
       </div>
      
