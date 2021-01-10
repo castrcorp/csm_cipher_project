@@ -110,7 +110,7 @@ $(document).ready(function(){
     } else {
         console.log("fail");
         } //end thursday
-        if (($("#5pm").val().toLowerCase().trim() === "you'll always be part of our hori-family") && (dayHour === 12) && (day === "Su")) { 
+        if (($("#5pm").val().toLowerCase().trim() === "keep your eyes on the horiseon") && (dayHour === 12) && (day === "Su")) { 
             $("#5pm").val("21344"); 
     } else {
         console.log("fail");} //end Friday
