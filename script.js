@@ -5,14 +5,14 @@ $(document).ready(function(){
     var dayHour = ""
     var screenEl = $("#screen");
        
-    // alert("oh I see. Well then...");
-    // lucky = prompt("Good Morning!\nCould you verify your User name for us?");
-    //     console.log(lucky);
-    //     if (lucky !== "saAHPlwF") {
-    //     while (lucky !== "saAHPlwF") {
-    //     lucky = prompt("Nice try, but seriously \nI need the right answer"); 
-    //                  }
-    //                 }
+    alert("oh I see. Well then...");
+    lucky = prompt("Good Morning!\nCould you verify your User name for us?");
+        console.log(lucky);
+        if (lucky !== "saAHPlwF") {
+        while (lucky !== "saAHPlwF") {
+        lucky = prompt("Nice try, but seriously \nI need the right answer"); 
+                     }
+                    }
 
     $(document).ready(function () {
         // an attempt at retreving localstorage, but it was proving to be unsuccessful. I think I'll have to go for the JSONstringify/parse method
