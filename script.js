@@ -40,7 +40,9 @@ $(document).ready(function(){
             $(".plan").each(function () {
                 var blockTime = parseInt($(this).attr("data-time"));
                 console.log(blockTime);
-    
+                
+               
+
                 if (dayHour === blockTime) {
                     $(this).removeClass("past");
                     $(this).removeClass("future");
@@ -49,10 +51,49 @@ $(document).ready(function(){
                     $(this).removeClass("past");
                     $(this).removeClass("present");
                     $(this).addClass("future");
-                } else {
+                } else if (dayHour === 9 && day === "Mo"){
+                    $("#9am").removeClass("present")
+                    $("#9am").removeClass("future")
+                    $("#9am").removeClass("past")
+                    $("#9am").addClass("mith")
+                    $(this).addClass("past");
+                    console.log("I guess it worked?")
+                } else if (dayHour === 11 && day === "Th"){
+                    $("#11am").removeClass("present")
+                    $("#11am").removeClass("future")
+                    $("#11am").removeClass("past")
+                    $("#11am").addClass("mith")
+                    $(this).addClass("past");
+                    console.log("I guess it worked?")
+                }else if (dayHour === 12 && day === "We"){
+                    $("#12pm").removeClass("present")
+                    $("#12pm").removeClass("future")
+                    $("#12pm").removeClass("past")
+                    $("#12pm").addClass("mith")
+                    $(this).addClass("past");
+                    console.log("I guess it worked?")
+                }else if (dayHour === 14 && day === "Tu"){
+                    $("#2pm").removeClass("present")
+                    $("#2pm").removeClass("future")
+                    $("#2pm").removeClass("past")
+                    $("#2pm").addClass("mith")
+                    $(this).addClass("past");
+                    console.log("I guess it worked?")
+                }else if (dayHour === 17 && day === "Fr"){
+                    $("#5pm").removeClass("present")
+                    $("#5pm").removeClass("future")
+                    $("#5pm").removeClass("past")
+                    $("#5pm").addClass("mith")
+                    $(this).addClass("past");
+                    console.log("I guess it worked?")
+                }else {
                     $(this).removeClass("future");
                     $(this).removeClass("present");
                     $(this).addClass("past");
+                // } if 
+                // }else {
+                //     $("#9am").removeClass("mith")
+                //     console.log("nope")
                 }
                 
                 // //if (dayHour < 22) {
@@ -66,7 +107,7 @@ $(document).ready(function(){
                 console.log(dayHour)
             var activity = $(this).siblings(".textarea").val();
             console.log(activity);
-            if (($("#9am").val().toLowerCase().trim() === "yiannis johnson") && (dayHour === 12) && (day === "Su")) {
+            if (($("#9am").val().toLowerCase().trim() === "yiannis johnson") && (dayHour === 9) && (day === "Mo")) {
                 // alert("oh I see. Well then...");
                 //  lucky = prompt("What's the password");
                 //  console.log(lucky);
@@ -90,28 +131,28 @@ $(document).ready(function(){
                 //     const newImg= $("<img>").attr("src", "https://pbs.twimg.com/profile_banners/342926562/1609481012/1500x500");
 
                 //     containerEl.append(surprise.append(newImg));
-                $("#9am").val("55251"); 
+                alert("55251"); 
             } else {
                 console.log("fail");
         }//end Monday
-        if (($("#2pm").val().toLowerCase().trim() === "customer service department") && (dayHour === 12) && (day === "Su")) {
-            $("#2pm").val("22513"); 
+        if (($("#2pm").val().toLowerCase().trim() === "customer service department") && (dayHour === 14) && (day === "Tu")) {
+            alert("22513"); 
         } else {
             console.log("fail");
         } //end Tuesday           
-        if (($("#12pm").val().toLowerCase().trim() === "social media marketing") && (dayHour === 12) && (day === "Su")) {
-            $("#12pm").val("45342"); 
+        if (($("#12pm").val().toLowerCase().trim() === "but hey we need your money") && (dayHour === 12) && (day === "We")) {
+           alert("45342"); 
         } else {
             console.log("fail");
         }//end wednesday
 
-        if (($("#11am").val().toLowerCase().trim() === "#637b-89") && (dayHour === 12) && (day === "Su")) {
-            $("#11am").val("14343"); 
+        if (($("#11am").val().toLowerCase().trim() === "#637b-89") && (dayHour === 11) && (day === "Th")) {
+            alert("14343"); 
     } else {
         console.log("fail");
         } //end thursday
-        if (($("#5pm").val().toLowerCase().trim() === "keep your eyes on the horiseon") && (dayHour === 12) && (day === "Su")) { 
-            $("#5pm").val("21344"); 
+        if (($("#5pm").val().trim() === "Keep your eyes on the horiSEOn") && (dayHour === 17) && (day === "Fr")) { 
+            alert("21344"); 
     } else {
         console.log("fail");} //end Friday
     

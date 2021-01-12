@@ -243,6 +243,10 @@ footer {
     background-color: #77dd77;
     color: black;
   }
+  .mith {
+    background-color: black;
+    color: orange;
+}
 
   .time-block{
       text-align: center;
@@ -258,3 +262,5 @@ footer {
     align-content: center;
     color: #000000;
   } 
+
+  
