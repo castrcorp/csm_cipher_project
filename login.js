@@ -9,12 +9,12 @@ function timeCheck() {
     var dayHour = moment().format("kkmm")
     console.log(dayHour)
 
-    // if(dayHour > 900 && dayHour < 917 === false) {
-    //     while ((dayHour > 900 && dayHour < 917) === false){
-    //         const late = moment().format("h:mm")
-    //         alert(`Attention!! It is ${late}. You\'re absence has been logged.\nHuman Resources has been notified.`);
-    // }  
-    // }
+    if(dayHour > 900 && dayHour < 917 === false) {
+        while ((dayHour > 900 && dayHour < 917) === false){
+            const late = moment().format("h:mm")
+            alert(`Attention!! It is ${late}. You\'re absence has been logged.\nHuman Resources has been notified.`);
+    }  
+    }
    
 }
 

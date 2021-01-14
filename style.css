@@ -259,7 +259,6 @@ footer {
 
   .log_in {
       border-radius: 5px;
-      box-shadow: 5px 10px #888888;
       margin: 0 auto;
       width: 50%;
       height: 500px;
@@ -281,5 +280,9 @@ footer {
     padding: 10%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: aliceblue;
+}
+
+.invert{
+    background-image: linear-gradient(grey, rgba(153, 101, 6, 0.459));
 }
 
