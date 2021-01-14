@@ -5,12 +5,12 @@ $(document).ready(function(){
     var dayHour = ""
     var screenEl = $("#screen");
        
-    alert("oh I see. Well then...");
-    lucky = prompt("Good Morning!\nCould you verify your User name for us?");
+    alert("oh hello. Well...");
+    lucky = prompt("Good Morning!\nCould you verify the previous password for us?");
         console.log(lucky);
-        if (lucky !== "saAHPlwF") {
-        while (lucky !== "saAHPlwF") {
-        lucky = prompt("Nice try, but seriously \nI need the right answer"); 
+        if (lucky !== "EtAHmoy7Tu@m!") {
+        while (lucky !== "EtAHmoy7Tu@m!") {
+        lucky = prompt("Nice try, but seriously \nwe need the right answer"); 
                      }
                     }
 
@@ -151,6 +151,7 @@ $(document).ready(function(){
     } else {
         console.log("fail");
         } //end thursday
+        
         if (($("#5pm").val().trim() === "Keep your eyes on the horiSEOn") && (dayHour === 17) && (day === "Fr")) { 
             alert("21344"); 
     } else {

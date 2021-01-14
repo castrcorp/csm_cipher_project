@@ -180,22 +180,7 @@ footer {
     margin-top: 100px auto;
 }
 
-.log_in {
-    display: flex;
-    margin: 15% auto;
-    width: 50%;
-    height: 500px;
-    background-color: #2a607c;
-}
 
-#inputs{
-    display: flex;
-    align-items: center;
-    margin: 25% auto;
-    padding: 10%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: aliceblue;
-}
 
 #submit{
     margin: 0 0 0 30%;
@@ -263,4 +248,38 @@ footer {
     color: #000000;
   } 
 
-  
+  .log{
+    background-image: linear-gradient( white, grey);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vw;
+    align-self: center;
+  }
+
+  .log_in {
+      border-radius: 5px;
+      box-shadow: 5px 10px #888888;
+      margin: 0 auto;
+      width: 50%;
+      height: 500px;
+      background-color: #2a607c;
+      display: flex; 
+      
+      position: absolute;
+      left: 20vw;
+      top: 20vw;
+  }
+ 
+
+#inputs{
+    border-radius: 5px;
+    box-shadow: 5px 10px #272727;
+    display: flex;
+    align-items: center;
+    margin: 25% auto;
+    padding: 10%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: aliceblue;
+}
+
